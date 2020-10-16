@@ -1,0 +1,53 @@
+#product{
+    background-color: #F5F5F5;
+}
+.menu-link{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.menu-link > span > a {
+    color: var(--text);
+}
+.menu-link > span > a:hover {
+    color: var(--text-hover);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-add-to-card{
+    padding: 14px 35px;
+    background-color: rgb(236, 66, 119);
+    color: var(--white);
+    border: none;
+    border: 1px solid #eb5886;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.btn-add-to-card:hover{
+    background-color: #F5F5F5;
+    color: var(--text);
+}
+.product-text-ship{
+    font-size: 14px;
+}
+.product-info{
+    font-size: 16px;
+    font-weight: bold;
+}
+.product-info-list{
+    font-size: 14px;
+}
+.product-info-list > li{
+    padding: 5px 0;
+}
+.product-info-list > li > ul > li{
+    padding: 5px 0;
+}
+
+/* Product-other */
+.product-other{
+    font-size: 26px;
+    padding: 75px 0;
+    text-align: center;
+}

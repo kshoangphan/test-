@@ -1,0 +1,26 @@
+:root{
+    --topbar: #E79795;
+    --text: #252a2b;
+    --text-hover: #ec628d;
+    --background: #f8d3de;
+    --bg-navfooter: #F1F1F1;
+}
+* { font-family: 'Montserrat', sans-serif; }
+body { background-color: var(--background); !important; margin: 0; padding: 0; }
+/*Owl carousel*/
+#new-items .owl-carousel .item-link, #hot-items .owl-carousel .item-link, #hash-tag .owl-carousel .item-link { color: var(--text); font-size: 14px; }
+#new-items .owl-carousel .item-link:hover { color: var(--text-hover); text-decoration: none; }
+#hot-items .owl-carousel .item-link:hover { color: var(--text-hover); text-decoration: none; }
+#hash-tag .owl-carousel .item-link:hover { color: var(--text-hover); text-decoration: none; }
+/* New items */
+.new-items-link, .hot-items-link, .hash-tag-link, .youtube-link, .instagram-follow-link { font-size: 25px; font-weight: bold; text-align: center; padding: 50px 0; }
+.new-items-link>a, .hot-items-link>a, .hash-tag-link>a, .youtube-link>a, .instagram-follow-link>a { color: var(--text); }
+.new-items-link a:hover, .hot-items-link a:hover, .hash-tag-link a:hover, .youtube-link a:hover, .instagram-follow-link a:hover { color: var(--text-hover); text-decoration: none; }
+/* text-carousel */
+.carousel-caption { font-size: 20px; }
+/* Instagram */
+.overlay-ins { position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: 0.5s ease; background-color: var(--text); }
+.instagram-comment { position: relative; }
+.instagram-comment:hover .overlay-ins { opacity: 0.9; }
+.text { color: white; font-size: 20px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
+/* Owl-ytb */

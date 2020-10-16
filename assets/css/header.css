@@ -1,0 +1,81 @@
+/* Header */
+:root{
+}
+/* Top-bar */
+#topbar { font-size: 15px; font-weight: bold; background: var(--topbar); }
+#topbar div div p { padding: 4px 0; margin-bottom: 0; text-transform: uppercase; }
+/*Header*/
+.navbar { background-color: var(--white); }
+.navbar-category { color: var(--text);  font-size: 14px; position: relative; padding: 0 10px;}
+.navbar-category:hover { color: var(--text-hover); text-decoration: none; transition: all 0.3s; }
+.overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.7); display: none; animation: fadeIn linear 0.3s; z-index: 1;}
+.bars-btn { color: var(--text); font-size: 28px; position: absolute; right: 0; display: none; }
+#bars-btn:checked ~ .overlay { display: block; }
+#bars-btn:checked ~ .navbar__mobie { transform: translateX(0%); }
+
+.navbar__mobie { position: fixed; top: 0; right: 0; bottom: 0; background-color: var(--background); width: 320px; max-width: 100%; transform: translateX(100%); transition: transform linear 0.2s; z-index: 1 }
+.navbar__mobile-catology a { color: var(--text); font-size: 14px; line-height: 35px; }
+.navbar__mobile-catology a:last-child { background-color: #f3dd1b; border-radius: 4px; padding: 5px; }
+.navbar__mobile-catology a:hover { color: var(--text-hover); text-decoration: none; }
+
+/* Header catalogy*/
+.header-nav { padding: 0 60px 0; background-color: white; }
+.header-nav div { text-align: center; }
+.header-nav div a { text-align: center; color: var(--text); font-size: 14px; font-weight: bolder; display: block; }
+.header-nav div a:hover{ text-decoration: none; color: var(--text-hover); }
+
+#nav-catology{
+    overflow: hidden;
+    z-index: 998;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+@media(max-width:1999px){
+    .navbar-category{
+        font-size: 16px;
+    }
+    .navbar-logo img{
+        width: 85px;
+    }
+}
+
+@media(max-width:1199px){
+    .navbar-category{
+        font-size: 14px;
+    }
+    .navbar-logo img{
+        width: 75px;
+    }
+}
+
+@media (max-width:991px){
+    .navbar-category{
+        display: none;
+    }
+    .bars-btn{
+        display: block;
+    }
+    .navbar-logo img{
+        width: 50px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .carousel-caption{
+        font-size: 16px;
+    }
+}
+@media (max-width:767px){
+    .carousel-caption{
+        font-size: 14px;
+    }
+}
+@media (max-width:575px){
+
+}
+@media (max-width:319px){
+
+}

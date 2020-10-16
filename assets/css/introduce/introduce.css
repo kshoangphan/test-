@@ -1,0 +1,80 @@
+/*Gioi thieu*/
+.introduce { background-color: #fef1ef;}
+.introduce-title { font-size: 36px; text-align:  center; }
+.introduce-text { font-size: 16px; text-align: justify; font-weight: lighter; }
+.img-introduce { width: 350px; height: auto; display: flex; margin: auto; position: relative; animation: imgIntro 2s; box-shadow: 10px 0px 10px 10px #94a4b0 }
+/*Su menh*/
+.mission { background-color: #ffdcda }
+.img-mission { width: 350px; height: auto; display: flex; margin: auto; position: relative; animation: imgMission 2s; box-shadow: 0px 0px 10px 10px #94a4b0 }
+/*Tam nhin*/
+.vision { background-color: #FFFFFF; text-align: center;}
+/*Lien he*/
+.contact { background-color: #fef1ef}
+.contact div div p { margin: 0; }
+.contact div div p:first-child { font-size: 12px; }
+#contact-form input { margin: 15px 0 }
+#contact-form > input { margin-top: 5px; padding: 2px; width: 100%; border-radius: 4px; border-style: none;}
+#contact-form > div input { width: 49%; border-radius: 4px; border-style: none; }
+.contact-form-btn { background-color: var(--text-hover); color: var(--white); border-style: none; border-radius: 4px; padding: 10px 15px; ; display: flex; margin: 5px auto 0; }
+@keyframes imgIntro {
+    to { top: 0px; left: 0px }
+    from { top: 0px; left: 300px }
+}
+@keyframes imgMission {
+    to { top: 0px; left: 0px }
+    from { top: 0px; left: -300px }
+}
+@media (max-width: 1999px) {
+    #introduce {
+        padding: 0 150px;
+    }
+    .introduce {
+        padding: 100px 20px 150px 20px;
+        line-height: 30px;
+    }
+    .mission, .vision, .contact {
+        padding: 100px 100px 150px 20px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 1199px) {
+    #introduce {
+        padding: 0 100px;
+    }
+    .introduce {
+        padding: 100px 20px 150px 20px;
+        line-height: 30px;
+    }
+    .mission, .vision, .contact {
+        padding: 100px 50px 150px 20px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 991px) {
+    #introduce {
+        padding: 0 15px;
+    }
+    .introduce {
+        padding: 100px 20px 100px 20px;
+    }
+    .mission, .vision, .contact{
+        padding: 100px 20px 100px 20px;
+    }
+    .img-introduce, .img-mission {
+        width: 240px;
+    }
+}
+@media (max-width: 767px) {
+    #introduce {
+        padding: 0 15px;
+    }
+    .introduce {
+        padding: 50px 20px 50px 20px;
+    }
+    .mission, .vision, .contact {
+        padding: 50px 20px 50px 20px;
+    }
+    .img-introduce, .img-mission {
+        width: 200px;
+    }
+}

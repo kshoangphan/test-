@@ -1,0 +1,19 @@
+/* Footer */
+#footer { background: #000000; }
+#footer > footer > div { color: var(--white); text-transform: uppercase; }
+#footer > footer > div > a { color: var(--white); font-size: 36px; }
+#footer > footer > div > a:hover { color: var(--text-hover); text-decoration: none; }
+#footer > footer > div > p { font-size: 14px; }
+#footer > footer > div > h4 { font-size: 14px; }
+.footer{ padding: 40px; }
+.footer-social a i { font-size: 24px; padding: 5px 10px; color: white; }
+.footer-social a i:hover { color: var(--text-hover); }
+.newsletter-form { position: relative; }
+.nav-footer { background-color: var(--bg-navfooter); }
+.nav-footer > div { text-align: center; }
+.nav-footer > div > a { color: var(--text); font-size: 16px; text-transform: uppercase; }
+.nav-footer > div > a:hover { color: var(--text-hover); text-decoration: none; }
+#form-news > input:first-child { height: 36px; }
+#form-news > input:last-child { position: absolute; top: 0; right: 0; height: 36px; border: 1px solid #FFFFFF; border-radius: 4px; color: var(--white); background-color: black; }
+#form-news > input:last-child:hover { background-color: var(--text-hover); }
+
